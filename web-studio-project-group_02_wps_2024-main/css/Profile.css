@@ -1,0 +1,307 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.light-theme {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.dark-theme {
+  background-color: #1b1b1b;
+  color: #d3d3d3; /* Light gray for dark theme text */
+}
+
+/* Header / Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black !important; /* Force black color */
+  padding: 20px;
+  color: white;
+}
+
+body.dark-theme .navbar {
+  background-color: #222;
+  color: #d3d3d3; /* Text color for dark theme */
+}
+
+.navbar .logo {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .logo ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .logo ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  margin-left: 70px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile span a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+body.dark-theme .navbar .profile span a {
+  color: #d3d3d3; /* Adjusted profile link color */
+}
+
+.navbar .profile .profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  color: white;
+}
+
+body.dark-theme .sidebar {
+  background-color: #333;
+  color: #d3d3d3; /* Sidebar text color for dark theme */
+}
+
+.sidebar-item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sidebar-item.active, .sidebar-item:hover {
+  background-color: #505050;
+}
+
+body.dark-theme .sidebar-item.active, 
+body.dark-theme .sidebar-item:hover {
+  background-color: #444; /* Darker background for hover */
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+body.dark-theme .main-content {
+  background-color: #1b1b1b;
+  color: #d3d3d3; /* Text color for main content in dark theme */
+}
+
+/* Manage Account Section */
+.user-profile {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-sidebar {
+  width: 250px;
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body.dark-theme .profile-sidebar {
+  background-color: #2e2e2e; /* Dark background for sidebar */
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.upload-photo {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-form {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .profile-form {
+  background-color: #2e2e2e; /* Dark background for form */
+  color: #d3d3d3;
+}
+
+.profile-form h3 {
+  margin-bottom: 20px;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+body.dark-theme .profile-form input {
+  background-color: #444;
+  color: #d3d3d3;
+  border: 1px solid #666;
+}
+
+.update-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Manage Themes Section */
+.theme-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .theme-section {
+  background-color: #2e2e2e;
+  color: #d3d3d3;
+}
+
+.theme-section h3 {
+  margin-bottom: 20px;
+}
+
+.theme-section label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.theme-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+body.dark-theme .theme-section select {
+  background-color: #444;
+  color: #d3d3d3;
+  border: 1px solid #666;
+}
+
+/* Dark and Light Theme Switch */
+body.light-theme .navbar,
+body.light-theme .sidebar {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme .navbar,
+body.dark-theme .sidebar {
+  background-color: #222;
+  color: #d3d3d3;
+}
+
+body.light-theme .main-content,
+body.light-theme .user-profile,
+body.light-theme .theme-section {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+body.dark-theme .main-content,
+body.dark-theme .user-profile,
+body.dark-theme .theme-section {
+  background-color: #1b1b1b;
+  color: #d3d3d3; /* Text color in dark theme */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

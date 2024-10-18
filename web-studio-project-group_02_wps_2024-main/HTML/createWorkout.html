@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating New Workout Plan</title>
+    <link rel="stylesheet" href="../css/createWorkout.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="homepage.html">FITLIFE</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Planner.html">Workout</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Forum</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <span><a href="Profile.html">Micheal Antoli</a></span>
+            <div class="profile-icon"></div>
+        </div>
+    </header>
+    <header>
+        <div class="title">
+            <br>
+            <h2>Create a Workout Plan</h2>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <a href="Planner.html"><button class="sidebar-slot-back">Cancel</button></a>
+                <br>
+                <br>
+                <h1>Workouts</h1>
+                <br>
+                <a href="Planner.html"><button class="sidebar-slot">Chest & Triceps</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Back & Biceps</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Legs</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Shoulders & Forearms</button></a>
+                <br>
+                <br>
+                <h1>Split</h1>
+                <h6>View current workout split</h6>
+                <a href="#"><button class="sidebar-slot">Current Split</button></a>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="workout-summary">
+                <h4>Workout Summary</h4>
+                <h6>Please enter the following:</h6>
+                <form id="workout-form">
+                    <div class="form-group">
+                        <label>Workout Name:</label>
+                        <input type="text" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label>Muscle Group:</label>
+                        <input type="text" placeholder="Enter muscle group">
+                    </div>
+                    <div class="form-group">
+                        <label>Day:</label>
+                        <input type="text" placeholder="Enter day">
+                    </div>
+                    <button type="submit">ENTER</button>
+                </form>
+            </section>
+            
+            <section class="workout-summary">
+                <h4>Add Exercises</h4>
+                <h6>Please enter the following:</h6>
+                <form id="add-exercise">
+                    <div class="form-group">
+                        <label>Exercise number:</label>
+                        <input type="number" placeholder="Enter number">
+                    </div>
+                    <div class="form-group">
+                        <label>Exercise Name:</label>
+                        <input type="text" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label>Sets:</label>
+                        <input type="text" placeholder="Enter sets">
+                    </div>
+                    <div class="form-group">
+                        <label>Reps:</label>
+                        <input type="text" placeholder="Enter repitions">
+                    </div>
+                    <button type="submit">ADD</button>
+                </form>
+            </section>
+        </main>
+
+        <main>
+            <section class="workout-summary">
+                <table class="workout-table">
+                    <h4>Workout Plan</h4>
+                    <br>
+                    <thead>
+                        <tr>
+                            <th>Exercise Number</th>
+                            <th>Exercise Name</th>
+                            <th>Sets x Reps</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>add exercise</td>
+                            <td>add sets and reps</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>add exercise</td>
+                            <td>add sets and reps</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form>
+                <a href="#"><button>Edit Exercise</button></a>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>FITLIFE is your go-to website for managing and tracking your workouts. We help you stay motivated and reach your fitness goals with your plans.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Workout Plans</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Discussion Forum</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@fitlife.com</p>
+            <div class="socials">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 FITLIFE | All Rights Reserved
+    </div>
+</footer>
+
+
+
+</html>

@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+body {
+    background-color: #1f2a38;
+    color: #fff;
+}
+
+/* CSS for Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0c1015;
+}
+
+
+.navbar .logo {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .logo ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .logo ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-left: 70px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .profile span a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+}
+
+.navbar .profile .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+/* CSS for Expanded Thread section */
+.thread {
+    position: relative;
+    top: 20px;
+
+    width: 98%;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.thread .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    
+    position: relative;
+    left: 1%;
+    top:  10px;
+}
+
+#name {
+    position: relative;
+    left: 3.5%;
+    bottom: 17.5px;
+
+    width: 200px;
+}
+
+#date {
+    position: relative;
+    left: 12%;
+    bottom: 35px;
+
+    width: 1600px;
+}
+
+#topic {
+    padding: 5px;
+    margin: 5px;
+
+    max-width: 1600px;
+
+    position: relative;
+    left: 1%;
+}
+
+#content {
+    padding: 5px 5px 30px 5px;
+    margin: 15px 5px 5px 5px;
+
+    width: 1600px;
+
+    position: relative;
+    left: 1%;
+}
+
+/* CSS for Thread Reply section */
+.thread-reply {
+    position: relative;
+    top: 50px;
+
+    width: 98%;
+    height: 160px;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.thread-reply form {
+    padding-top: 10px;
+}
+
+#reply-content-label {
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+
+    left: 0.5%;
+}
+
+#reply-content {
+    display: flex;
+    padding: 20px 8px 20px 8px;
+
+    position: relative;
+    left: 0.7%;
+
+    max-width: 2000px;
+    width: 97.5%;
+    min-width: 200px;
+
+    margin: 10px;
+}
+
+#submit-button {
+    margin: 10px 0px 10px 0px;
+    padding: 2px;
+    border-color: black;
+    color: #008cff;
+    width: 70px;
+
+    display: flex;
+    position: relative;
+    left: 94%;
+    top: 10px;
+}
+
+#attach-image {
+    padding: 10px;
+    margin: 10px;
+
+    position: relative;
+    left: 0.2%;
+
+    bottom: 30px;
+}
+
+#cancel {
+    color: red;
+    border:black;
+    width: 70px;
+
+    position: relative;
+    left: 89.5%;
+    bottom: 69px;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+/* CSS for Replies section */
+.replies {
+    position: relative;
+    top: 150px;
+
+    width: 98%;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+}
+
+.replies h3 {
+    padding: 10px;
+}
+
+.replies-sort {
+    position: relative;
+    left: 90%;
+    bottom: 30px;
+
+    width: 100px;
+}
+
+#replies-dropdown {
+    width: 130px;
+    height: 20px;
+}
+
+/* CSS for Reply 1 section */
+.replies-1 {
+    position: relative;
+
+    width: 98%;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.replies-1 .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    
+    position: relative;
+    left: 1.25%;
+    top: 10px;
+}
+
+.replies-1 p {
+    word-wrap: break-word;
+}
+
+.replies-1 #name-1 {
+    position: relative;
+    top: 15px;
+
+    padding: 5px;
+}
+
+.replies-1 #replies-1-content {
+    position: relative;
+    left: 10%;
+    bottom: 25px;
+
+    width: 1600px;
+}
+
+.replies-1 #replies-1-date {
+    position: relative;
+    left: 88%;
+    bottom: 70px;
+
+    width: 200px;
+}
+
+/*         * FOOTER **          */
+footer {
+    background-color: #0c1015;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    clear: both;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h2 {
+    color: #00aaff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p, .footer-section ul {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #00aaff;
+  }
+  
+  .socials a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .socials img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .footer-bottom {
+    padding: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+    /* CSS for Profile Dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 5px;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+/* CSS for resizing */
+  .navbar, .thread, .thread-reply, .replies {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.navbar ul {
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.thread, .thread-reply, .replies {
+    width: 95%;
+}

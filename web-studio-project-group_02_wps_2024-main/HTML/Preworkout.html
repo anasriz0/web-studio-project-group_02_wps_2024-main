@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Shop</title>
+    <link href="../css/products.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="Bars.html">FITLIFE</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Planner.html">Workout</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Forum</a></li>
+            </ul>
+        </nav>
+        
+        <div class="profile dropdown">
+            <span><a href="Profile.html">Michael Antoli</a></span>
+            <div class="profile-icon"></div>
+            <div class="dropdown-content">
+                <a href="Profile.html">Manage Account</a>
+                <a href="SignUpandLogin.html">Sign Out</a>
+            </div>
+        </div>
+    </header> 
+
+
+    <div class="cart">
+        <a href="Cart.html">
+            <button>View Shopping Cart</button>
+          </a>
+        <span id="cart-total">$0.00</span>
+    </div>
+
+    <section class="promo-banner">
+        <h2>Whey too cheap!</h2>
+        <p>Buy any three or more protein powder products for an extra 10% off your total order!</p>
+        <img src="../resources/Protein-deal.jpg" alt="Protein powder deal buy three or more for an extra 10% off" width="350"> 
+        <br>
+        <br>
+        <a href="Powder.html">
+            <button>View Protein Powder</button>
+          </a>
+          <br>
+          <p id="offer-ends">Offer ends 31/12/24</p>
+    </section>
+
+    <section class="shop">
+        <div class="shop-controls">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+                <option value="bestsellers">Best sellers</option>
+                <option value="weight-asc">Weight: low to high</option>
+                <option value="weight-desc">Weight: high to low</option>
+                <option value="flavour">Flavour</option>
+                <option value="alpha-asc">Alphabetical: A-Z</option>
+                <option value="alpha-desc">Alphabetical: Z-A</option>
+            </select>
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+
+        <div class="category-tabs">
+            <a href="Bars.html">
+                <button>Protein Bars</button>
+              </a>
+              <a href="Powder.html">
+                <button>Protein Powder</button>
+              </a>
+            <a href="Creatine.html">
+                <button>Creatine</button>
+              </a>
+              
+                <button class="active">Pre-Workout</button>
+              
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="../resources/Pre1.jpg" alt="Gold Standard 100% Isolate"> 
+                <h3>Gold Standard 100% Isolate by Optimum Nutrition, 930g</h3>
+                <p class="price">$80</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="../resources/Pre2.jpg" alt="Musashi High Protein Powder"> 
+                <h3>Musashi High Protein Powder Salted Caramel 900g</h3>
+                <p class="price">$45</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="../resources/Pre3.jpg" alt="Musashi 100% Whey Vanilla"> 
+                <h3>Musashi 100% Whey Vanilla 2kg</h3>
+                <p class="price">$60</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="../resources/Pre4.jpg" alt="Muscle Nation CUSTARD Casein"> 
+                <h3>Muscle Nation CUSTARD Casein Protein - White Chocolate, 1000g</h3>
+                <p class="price">$75</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="../resources/Pre5.jpg" alt="Muscle Nation CUSTARD Casein Banana"> 
+                <h3>Muscle Nation CUSTARD Casein Protein - Banana, 1000g</h3>
+                <p class="price">$75</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                 <img src="../resources/Pre6.jpg" alt="Muscle Nation CUSTARD Vanilla"> 
+                <h3>Muscle Nation CUSTARD Casein Protein - Vanilla, 400g</h3>
+                <p class="price">$25</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="../Javascript/Products.js"></script>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>FITLIFE is your go-to website for managing and tracking your workouts. We help you stay motivated and reach your fitness goals with your plans.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Planner.html">Workout Plans</a></li>
+                    <li><a href="Preworkout.html">Shop</a></li>
+                    <li><a href="Discussion.html">Discussion Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@fitlife.com</p>
+                <div class="socials">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 FITLIFE | All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

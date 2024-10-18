@@ -1,0 +1,258 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('../resources/login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Header / Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .logo ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .logo ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  margin-left: 70px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile span a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+}
+
+.navbar .profile .profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+/* Login Box (Join Us or Login) */
+.login-box {
+  margin-top: 250px; /* Distance from the top */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Increased width to 90% */
+  max-width: 800px; /* Increased max width limit */
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* Buttons Area */
+.button-area {
+  display: flex;
+  justify-content: space-between; /* Position buttons on opposite sides */
+  gap: 30px; /* Optional gap for spacing */
+}
+
+.action-btn {
+  padding: 15px 100px; /* Increased padding for wider buttons */
+  background-color: #0382ac; /* Light bluish color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 25px; /* Makes the buttons round */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.action-btn:hover {
+  background-color: #026b8a; /* Darker shade on hover */
+}
+
+/* Modal Styles */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 100px; /* Move the modal down to avoid covering the navbar */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px); /* Adjust height to prevent overflow */
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.form-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black; /* Make header text black */
+}
+
+.form-container p {
+  margin-bottom: 20px;
+  color: black; /* Make paragraph text black */
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Label styles inside modal content */
+.modal-content label {
+    color: black; /* Set the text color for labels to black */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+  padding: 12px 25px;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+}
+
+.submit-btn:hover {
+  background-color: #039a5c;
+}
+
+.modal-container .modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* New styles for login and signup box text */
+.modal-content h1,
+.modal-content p {
+  color: black; /* Set text color to black for all headings and paragraphs in the modal */
+}
+
+.password-requirements {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.requirement {
+  display: flex;
+  align-items: center;
+}
+
+.requirement span {
+  margin-left: 5px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.scrollable-section {
+  max-height: 80vh; /* Constrains the content height to allow scrolling */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.modal-content h2,
+.modal-content h3 {
+  color: black;
+}
+
+.feedback {
+  display: none; /* Initially hidden */
+  font-size: 20px; /* Larger font for visibility */
+  margin-top: 5px; /* Space above */
+}
+.correct {
+  color: green; /* Green for correct */
+}
+.incorrect {
+  color: red; /* Red for incorrect */
+}

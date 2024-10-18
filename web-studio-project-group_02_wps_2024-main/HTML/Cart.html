@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Checkout</title>
+  <link href="../css/cart.css" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="Bars.html">FITLIFE</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Planner.html">Workout</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Forum</a></li>
+            </ul>
+        </nav>
+        
+        <div class="profile dropdown">
+          <span><a href="Profile.html">Michael Antoli</a></span>
+          <div class="profile-icon"></div>
+          <div class="dropdown-content">
+              <a href="Profile.html">Manage Account</a>
+              <a href="SignUpandLogin.html">Sign Out</a>
+          </div>
+      </div>
+  </header> 
+
+
+    <div class="continue">
+    <p><a href="Powder.html"> < Continue shopping</a></p>
+    </div>
+
+
+    <section class="main-content">
+      <div class="cart-section">
+        <div class="cart-header">
+          <h2>Shopping Cart</h2>
+          <button id="select-all">Select all</button>
+          <button id="delete-selected">Delete selected</button>
+          <button>Undo</button>
+        </div>
+
+
+        <div class="cart-item" data-price="80">
+          <input type="checkbox" class="item-checkbox">
+          <img src="../resources/Protein1.jpg" alt="Gold Standard 100% Isolate"> 
+          <span>Gold Standard 100% Isolate by Optimum Nutrition, 930g</span>
+          <input type="number" class="quantity" value="1" min="1">
+          <span>$80</span>
+        </div>
+        
+        <div class="cart-item" data-price="55">
+          <input type="checkbox" class="item-checkbox">
+          <img src="../resources/Creatine1.jpg" alt="Optimum Nutrition Creatine Powder">
+          <span>Optimum Nutrition Micronized Creatine Powder, Unflavoured, 600g</span>
+          <input type="number" class="quantity" value="1" min="1">
+          <span>$55</span>
+        </div>
+
+        <div class="cart-item" data-price="5">
+          <input type="checkbox" class="item-checkbox">
+          <img src="../resources/Bars1.jpg" alt="Musashi High Protein Bar">
+          <span>Musashi High Protein Bar, Chocolate Brownie 90g</span>
+          <input type="number" class="quantity" value="1" min="1">
+          <span>$5</span>
+        </div>
+
+        <div class="cart-item" data-price="60">
+          <input type="checkbox" class="item-checkbox">
+          <img src="../resources/Creatine2.jpg" alt="Musashi Creatine">
+          <span>Musashi Creatine Unflavoured 350g</span>
+          <input type="number" class="quantity" value="3" min="1">
+          <span>$60</span>
+        </div>
+      </div>
+
+      <div class="checkout-section">
+        <div class="form-section">
+          <h2>Billing and Shipping Details</h2>
+          <form>
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="John">
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Citizen">
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="johncitizen@gmail.com">
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="(+61) 123 456 789">
+            </div>
+            <div class="input-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" placeholder="Australia">
+            </div>
+            <div class="input-group">
+              <label for="state">State</label>
+              <input type="text" id="state" placeholder="Victoria">
+            </div>
+            <div class="input-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Melbourne">
+            </div>
+            <div class="input-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="123 Happy Lane">
+            </div>
+            <div class="input-group">
+              <label for="postcode">Postcode</label>
+              <input type="text" id="postcode" placeholder="1234">
+            </div>
+            <div class="input-group">
+              <label for="shipping">Shipping Method</label>
+              <select id="shipping">
+                <option value="free" selected>Standard (FREE)</option>
+                <option value="express">Express (+$10)</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="instructions">Delivery Instructions</label>
+              <input type="text" id="instructions" placeholder="Leave the package at the door">
+            </div>
+            <button type="button" id="save">Save</button>
+          </form>
+        </div>
+
+        <div class="payment-section">
+          <h2>Card Details</h2>
+          <div class="input-group">
+            <label for="card-name">Name on Card</label>
+            <input type="text" id="card-name" placeholder="John Citizen">
+          </div>
+          <div class="input-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="1111 2222 3333 4444">
+          </div>
+          <div class="input-group">
+            <label for="expiry">Expiration Date</label>
+            <input type="text" id="expiry" placeholder="05/26">
+          </div>
+          <div class="input-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123">
+          </div>
+
+          <div class="coupon-section">
+            <label for="coupon">Coupon Code</label>
+            <input type="text" id="coupon" value="PROTEIN123">
+            <p class="coupon-valid">Valid coupon! Enjoy $10 off your order!</p>
+          </div>
+
+          <div class="summary-section">
+            <p>Subtotal: <span>$200</span></p>
+            <p>Shipping: <span>FREE</span></p>
+            <p>Coupon: <span>-$10</span></p>
+            <p>Total (Tax incl.): <span>$190</span></p>
+          </div>
+
+          <button class="checkout-button">Checkout and Buy</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="delete-confirmation" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to delete this item(s) from cart?</p>
+      <button id="confirm-delete" class="delete-button">Yes, delete</button>
+      <button id="cancel-delete" class="cancel-button">Cancel</button>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../Javascript/cart.js"></script>
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>FITLIFE is your go-to website for managing and tracking your workouts. We help you stay motivated and reach your fitness goals with your plans.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Planner.html">Workout Plans</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Discussion Forum</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@fitlife.com</p>
+            <div class="socials">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 FITLIFE | All Rights Reserved
+    </div>
+</footer>
+
+</body>
+</html>

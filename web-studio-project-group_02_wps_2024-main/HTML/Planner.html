@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="../css/Planner.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="SignUpandLogin.html">FITLIFE</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Planner.html">Workout</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Forum</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <span><a href="Profile.html">Micheal Antoli</a></span>
+            <div class="profile-icon"></div>
+        </div>
+    </header>
+    <header>
+        <div class="title">
+            <br>
+            <h2>Workout Plans</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <h1>Workouts</h1>
+                <h6>Please select a workout</h6>
+                <a href="Planner.html"><button class="sidebar-slot">Chest & Triceps</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Back & Biceps</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Legs</button></a>
+                <a href="Planner.html"><button class="sidebar-slot">Shoulders & Forearms</button></a>
+            </ul>
+            <ul>
+                <br>
+                <h1>New Workout</h1>
+                <a href="createWorkout.html"> <button class="create-workout">Create new Workout</button></a>
+            </ul>
+            <ul>
+                <br><br>
+                <h1>Split</h1>
+                <h6>View current workout split</h6>
+                <a href="split.html"><button class="sidebar-slot">Current Split</button></a>
+            </ul>
+        </aside>
+
+        <main class="workout-content">
+            <section class="workout-summary">
+                <h3>Workout Summary</h3>
+                <br>
+                <p><b>Muscle Group:</b> Chest & Triceps</p>
+                <p><b>Recommended day:</b> Monday</p>
+                <button class="edit-summary">Edit Summary</button>
+            </section>
+        </main>
+
+        <main class="workout-content">
+            <section class="workoutTable">
+                <table class="workout-table">
+                    <h3>Workout Plan</h3>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Exercise Name</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Push ups (warmup)</td>
+                            <td>2</td>
+                            <td>8-12</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Flat bench dumbbells</td>
+                            <td>3</td>
+                            <td>8-12</td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="add-exercise">Add Exercise</button>
+            </section>
+
+            <div class="edit-exercise-modal" id="editModal">
+                <div class="edit-modal-content">
+                    <span class="edit-close">&times;</span>
+                    <h3>Edit Exercise Details</h3>
+                    <form>
+                        <label for="exercise-no">Exercise Number:</label>
+                        <input type="number" id="exercise-no" placeholder="1">
+                        <label for="exercise-name">Exercise Name:</label>
+                        <input type="text" id="exercise-name" placeholder="Bench Press">
+                        <label for="sets">Sets:</label>
+                        <input type="text" id="sets" placeholder="3">
+                        <label for="reps">Reps:</label>
+                        <input type="text" id="reps" placeholder="10">
+                        <button type="submit" class="apply-btn">Apply</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- delete button -->
+            <div class="delete-exercise-modal" id="deleteModal">
+                <div class="delete-modal-content">
+                    <span class="delete-close">&times;</span>
+                    <h3>Delete Exercise</h3>
+                    <form>
+                        <label for="exercise-no">Exercise Number:</label>
+                        <button type="submit" class="apply-btn">Apply</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // Modal for editbutton ex1
+        // get modal
+        var editmodal = document.getElementById("editModal");
+        // open modal
+        var editbtn = document.querySelector(".edit-btn");
+        // closes the modal
+        var editspan = document.querySelector(".edit-close");
+        // clicks the button, open the modal
+        editbtn.onclick = function() {
+            editmodal.style.display = "block";
+        }
+        // (x), close the modal
+        editspan.onclick = function() {
+            editmodal.style.display = "none";
+        }
+        // clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == editmodal) {
+                editmodal.style.display = "none";
+            }
+        }
+
+
+        // Modal for delete button 
+        var deletemodal = document.getElementById("deleteModal");
+        // open modal
+        var deletebtn = document.querySelector(".delete-btn");
+        // Get the <span> element that closes the modal
+        var deletespan = document.querySelector(".delete-close");
+        // clicks the button, open the modal
+        deletebtn.onclick = function() {
+            deletemodal.style.display = "block";
+        }
+        // (x), close the modal
+        deletespan.onclick = function() {
+            deletemodal.style.display = "none";
+        }
+        // clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == deletemodal) {
+                deletemodal.style.display = "none";
+            }
+        }
+
+        
+    </script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>FITLIFE is your go-to website for managing and tracking your workouts. We help you stay motivated and reach your fitness goals with your plans.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Workout Plans</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Discussion Forum</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@fitlife.com</p>
+            <div class="socials">
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 FITLIFE | All Rights Reserved
+    </div>
+</footer>
+</html>
+

@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  /* makes footer stay on the bottom and not have space between it and the bottom */
+  html, body {
+   height: 100%; 
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1f2a38;
+    color: #fff;
+    margin: 0;
+    /*THIS IS WHAT MAKES THE FOOTER NOT FIT THE WIDTH OF THE SCREEN below one line padding*/
+    padding:20px;
+    padding-top: 90px;
+  }
+  
+   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+    
+  
+  /* Header / Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  position: fixed; /* Fix it at the top */
+  top: 0; /* Stick it to the top */
+  left: 0; /* Align it with the left edge */
+}
+
+.navbar .logo {
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .logo ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .logo ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  margin-left: 70px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile span a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+}
+
+.navbar .profile .profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+  
+  /* THIS IS THE THING THAT MAKES THE DETAILS GO TO SIDE NOT BOTTOM 
+  .main-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+    */
+  
+  .cart-section, .checkout-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .cart-header, .form-section h2, .payment-section h2 {
+    margin-bottom: 15px;
+  }
+  
+  .cart-section {
+    flex: 2;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-item input[type="number"] {
+     width: 60px; 
+     text-align: center; 
+     margin-right: 10px;
+    }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .cart-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .cart-item span {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .cart-item span:last-child {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  
+  .checkout-section {
+    flex: 1;
+  }
+  
+  .form-section h2, .payment-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    background-color: #1b1f2b;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-group input:focus {
+    border-color: #333;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0A60BD;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  button#save {
+    width: 35%;
+    background-color: #176803;
+    margin-left: 370px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  
+  }
+  
+  button#save:hover {
+    background-color: darkgreen;
+    transform: scale(1.01);
+  }
+  
+  button.checkout-button {
+    width: 35%;
+    margin-left: 370px;
+    margin-top: 20px;
+    background-color: #176803;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button.checkout-button:hover {
+    background-color: darkgreen;
+    transform: scale(1.01);
+  }
+  
+  
+  .quantity {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.319);
+    color: black;
+  }
+
+  
+  .summary-section {
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 15px;
+    background: black;
+  }
+  
+  .coupon-section {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.031);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  #coupon {
+    background-color: #1b1f2b;
+    color: #fff;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  
+  .summary-section p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .coupon-valid {
+    color: #0f0;
+  }
+  
+  
+  .continue {
+  padding-bottom: 12.5px;
+  padding-top: 12.5px;
+  }
+
+
+  .continue a {
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  .continue a:visited {
+    color: white !important;
+  }
+  
+  .continue a:hover {
+    color: white !important;
+    text-decoration: underline;
+  }
+  
+  .continue a:active {
+    color: white !important;
+  }
+
+
+
+  /* Error prevention for delete button */
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #1b1f2b;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.delete-button {
+  background-color: #d32f2f;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #b0bec5;
+  border: none;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c62828;
+}
+
+.cancel-button:hover {
+  background-color: #90a4ae;
+}
+
+
+
+/*         * FOOTER **          */
+footer {
+  background-color: #0c1015;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #00aaff;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-bottom {
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+
+
+
+/* CSS FOR DROPDOWN PROFILE */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link href="../css/discussion.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="Bars.html">FITLIFE</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Planner.html">Workout</a></li>
+                <li><a href="Preworkout.html">Shop</a></li>
+                <li><a href="Discussion.html">Forum</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile dropdown">
+            <span><a href="Profile.html">Michael Antoli</a></span>
+            <div class="profile-icon"></div>
+            <div class="dropdown-content">
+                <a href="Profile.html">Manage Account</a>
+                <a href="SignUpandLogin.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="post-forum">
+        <form>
+            <label for="dis-topic" id="topic-label">Topic:</label>
+            <input type="text" id="dis-topic" name="dis-topic">
+            <br>
+            <label for="dis-content" id="content-label">Content:</label>
+            <input type="text" id="dis-content" name="dis-content">
+            <br>
+            <input type="submit" value="Post" id="submit-btn">
+        </form>
+
+        <p id="attach-image">Attach Image</p>
+    </div>
+
+    <div class="threads-forum">
+        <div class="thread-main">
+            <h3>Threads</h3>
+
+            <div class="threads-sort">
+                <select id="threads-dropdown">
+                    <option selected>Newest</option>
+                    <option>Oldest</option>
+                </select>
+            </div>
+        </div>
+        <div class="thread-1">
+            <div class="profile-icon"></div>
+            <p id="name-1">Jake Adam</p>
+            <p id="topic-1">
+                Workout Routine
+            </p>
+            <p id="content-1">
+                I changed my exercises in my workout due to my arms
+                being severely underworked. Any tips?
+            </p>
+            <p id="date-1">
+                September 12, 2024 09:34
+            </p>
+
+            <a href="Discussion2.html">
+                <button id="reply">Reply</button>
+            </a>
+            <button id="edit">Edit</button>
+            <button id="delete">Delete</button>
+        </div>
+
+        <div class="thread-2">
+            <div class="profile-icon"></div>
+            <p id="name-2">Jane Doe</p>
+            <p id="topic-2">
+                Nutrition Advice
+            </p>
+            <p id="content-2">
+                I want to lose 0.5kg-1kg per week as recommended by
+                various online sources. What should my macros look like for xx
+                bodyweight and xx.xx BMI?
+            </p>
+            <p id="date-2">
+                August 21, 2024 17:50
+            </p>
+
+            <a href="Discussion2.html">
+                <button id="reply">Reply</button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>FITLIFE is your go-to website for managing and tracking your workouts. We help you stay motivated and reach your fitness goals with your plans.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="Planner.html">Workout Plans</a></li>
+                    <li><a href="Preworkout.html">Shop</a></li>
+                    <li><a href="Discussion.html">Discussion Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@fitlife.com</p>
+                <div class="socials">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 FITLIFE | All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
